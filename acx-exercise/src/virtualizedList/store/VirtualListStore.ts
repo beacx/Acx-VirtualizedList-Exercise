@@ -1,4 +1,4 @@
-import {action, computed, observable} from "mobx";
+import {action, computed, makeObservable, observable} from "mobx";
 import {Works} from "../../services/ApiService";
 
 export class VirtualListStore{
@@ -10,6 +10,11 @@ export class VirtualListStore{
     @observable private data: Works[] = [];
 
 
+    constructor() {
+        makeObservable(this)
+    }
+
+
     /**
      * adds an item onto data list
      *
@@ -18,6 +23,12 @@ export class VirtualListStore{
      */
     @action
     public appendItem(item: Works) {
+
+
+    }
+
+    @action
+    public extend(items: Works[]) {
 
 
     }
