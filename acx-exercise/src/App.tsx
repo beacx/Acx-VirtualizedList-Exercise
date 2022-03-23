@@ -18,9 +18,7 @@ const App = observer(() => {
       <div className="App">
         {/*  render your virtualized list here using data held in the mobx store VirtualizedListStore*/}
 
-      {/*  you may use this guide to understand how to implement a simple virtualized list.
-      https://medium.com/ingeniouslysimple/building-a-virtualized-list-from-scratch-9225e8bec120
-      you must build the virtualization using the provided VirtualizedListStore and its methods  */}
+      {/* you must build the virtualization using the provided VirtualizedListStore and its methods  */}
       </div>
   );
 });
